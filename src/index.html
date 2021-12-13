@@ -26,7 +26,7 @@
       <p>Loading content from the API: <b id="name">...</b></p>
     </main>
     <script>
-      (async function () {
+      !(async function () {
         const { text } = await (await fetch(`/api/message`)).json();
         document.querySelector('#name').textContent = text;
       }())
